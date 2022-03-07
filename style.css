@@ -517,6 +517,11 @@ section .title::after{
     display:lock;
 }
 
+.contact .column-right:focus{
+    text-align: left;
+    display:lock;
+}
+
 input[type=text] {
     width: 100%;
     background-color:dodgerblue;
@@ -526,6 +531,46 @@ input[type=text] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+input[name=firstName]:focus{
+    background-color: #0077ff50;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+}
+
+input[name=lastName]:focus{
+    background-color: #0077ff50;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+}
+
+input[name=email]:focus{
+    background-color: #0077ff50;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+}
+
+textarea[name=massage]:focus{
+    background-color: #0077ff50;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+    letter-spacing: 1.5px;
+    font-size: 15px;
 }
 
 input[type=email] {
