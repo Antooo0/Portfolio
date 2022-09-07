@@ -40,12 +40,12 @@ section{
 }
 
 footer{
-    font-family: 'Pacifico', cursive;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     letter-spacing: 1.2px;
 }
 
 .about, .services, .skills, .teams, .contact{
-    font-family: 'Quicksand', sans-serif;
+    font-family:"SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
 }
 .about .about-content,
 .services .serv-content,
@@ -95,9 +95,12 @@ section .title::after{
     font-family: 'Quicksand', sans-serif;
     transition: all 0.3s ease;
 }
+
 .navbar.sticky{
     padding: 15px 0;
-    background: dodgerblue;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(50px);
+    border: 1px solid grey;
 }
 .navbar .max-width{
     display: flex;
@@ -235,8 +238,14 @@ section .title::after{
 }
 
 /* about section styling */
+.about{
+    background-color: black;
+    color: white;
+}
+
 .about .title::after{
     content: "who i am";
+    background: black;
 }
 .about .about-content .left{
     width: 45%;
@@ -326,8 +335,14 @@ section .title::after{
 
 /* skills section styling */
 
+.skills{
+    background-color: black;
+    color: white;
+}
+
 .skills .title::after{
     content: "what i know";
+    background: black;
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -372,7 +387,8 @@ section .title::after{
 .skills .skills-content .right .line{
     height: 20px;
     width: 100%;
-    background: lightgrey;
+    background: none;
+    outline: 1px solid lightgrey;
     position: relative;
     border-radius: 20px;
 }
@@ -610,7 +626,7 @@ button[type=submit] {
     width: 50%;
     background-color: #888888;
     color: rgb(0, 0, 0);
-    font-size: 15px;
+    font-size: 18px;
     text-shadow: 0 1px 0 #fff, 0 2px 0 #fff, 0 3px 0 rgb(255, 255, 255), 0 4px 0 #fff, 0 5px 0 rgb(255, 255, 255), 0 6px 1px rgb(255, 255, 255, .1), 0 0 5px rgb(255, 255, 255, .1), 0 1px 3px rgb(255, 255, 255, .1), 0 3px 5px rgb(255, 255, 255, .2), 0 5px 10px rgb(255, 255, 255, .25), 0 10px 10px rgb(255, 255, 255, .2), 0 20px 20px rgb(255, 255, 255, .15);
     padding: 14px 20px;
     margin: 8px 0;
