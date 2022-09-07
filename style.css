@@ -45,7 +45,7 @@ footer{
 }
 
 .about, .services, .skills, .teams, .contact{
-    font-family:"SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif
+    font-family:"SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 .about .about-content,
 .services .serv-content,
